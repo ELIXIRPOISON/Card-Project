@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.user-card {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-selector {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#theme {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #333333, #dd1818);
+    color: #f1f1f1;
+}
+
+.dark-mode .container {
+    background-color: #444;
+}
+
+.dark-mode input[type="text"], .dark-mode input[type="tel"] {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-mode button {
+    background-color: #444;
+}
+
+.dark-mode button:hover {
+    background-color: #333;
+}
+
+.dark-mode .user-card {
+    background-color: #555;
+}
+
+.dark-mode #theme {
+    background-color: #555;
+    color: #eee;
+}

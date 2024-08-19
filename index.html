@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information Form</h1>
+        <form id="userForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="text" id="country" placeholder="Country" required>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+            <input type="text" id="state" placeholder="State" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="village" placeholder="Village" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="user-card">
+            <h2>Stored User Information</h2>
+            <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+            <p><strong>Country:</strong> <span id="displayCountry"></span></p>
+            <p><strong>Phone Number:</strong> <span id="displayPhoneNumber"></span></p>
+            <p><strong>State:</strong> <span id="displayState"></span></p>
+            <p><strong>City:</strong> <span id="displayCity"></span></p>
+            <p><strong>Village:</strong> <span id="displayVillage"></span></p>
+        </div>
+
+        <div class="theme-selector">
+            <label for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="light">Light Mode</option>
+                <option value="dark">Dark Mode</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
